@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SK Enterprises – Facade & Glass Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SK Enterprises</div>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#foundation">Foundation</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>SK Enterprises</h1>
+      <p>Redefining Skylines</p>
+      <span>Sleek, Modern Façade Solutions That Transform Architecture and Urban Living</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section text-img">
+    <div>
+      <h2>About Us</h2>
+      <p><strong>Since 2014</strong>, SK Enterprises has been a leader in aluminium & glass facade systems, delivering exceptional quality and design.</p>
+      <ul>
+        <li><strong>Quality Assurance:</strong> Strict standards to meet expectations.</li>
+        <li><strong>Innovative Design:</strong> Cutting-edge aesthetics.</li>
+        <li><strong>Customer-Centric:</strong> Tailored solutions for every project.</li>
+      </ul>
+    </div>
+    <img src="images/imgankita.jpeg" alt="Facade systems" />
+  </section>
+
+  <!-- Vision / Mission / Values -->
+  <section id="foundation" class="section foundation">
+    <h2>Our Foundation</h2>
+    <div class="foundation-cards">
+      <div class="card">
+        <i class="fas fa-bullseye"></i>
+        <h3>Vision</h3>
+        <p>To be the leader in innovative façade solutions.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-rocket"></i>
+        <h3>Mission</h3>
+        <p>Delivering quality and value to our clients.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-handshake"></i>
+        <h3>Core Values</h3>
+        <p>Integrity, excellence, customer focus, and teamwork.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section id="expertise" class="section text-img reverse">
+    <img src="images/imgankitc.jpeg" alt="Aluminium windows"/>
+    <div>
+      <h2>Our Expertise</h2>
+      <ul>
+        <li><strong>Aluminum Window Sliding Systems:</strong> Elegant & functional solutions.</li>
+        <li><strong>Glass Façade Systems:</strong> Sleek designs that enhance aesthetics.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section text-img">
+    <div>
+      <h2>Key Projects</h2>
+      <ul>
+        <li>K Star Mall – Chembur, Mumbai</li>
+        <li>Mall De Core – Lalpur, Ranchi, Jharkhand</li>
+        <li>Circlips Technologie Pvt. Ltd – Umargam, Gujarat</li>
+        <li>Riddhi Siddhi Group – Thane</li>
+        <li>Shubhjivan Developers – Borivali, Mumbai</li>
+      </ul>
+    </div>
+    <img src="images/imgankitd.jpeg" alt="Completed project"/>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section foundation">
+    <h2>Our Services</h2>
+    <div class="foundation-cards">
+      <div class="card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Fast Site Visits</h3>
+        <p>Quick assessments to start projects without delays.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-headset"></i>
+        <h3>After-Sales Support</h3>
+        <p>Continued assistance even after project completion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why-us" class="section text-img reverse">
+    <img src="images/imgankite.jpeg" alt="Why choose us"/>
+    <div>
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>End-to-End Façade Solutions</li>
+        <li>10+ Years of Experience</li>
+        <li>Expert Team & Engineers</li>
+        <li>Premium-Grade Materials</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> 9322803398, 9867298150</p>
+    <p><strong>Email:</strong> skenterprises672@gmail.com</p>
+    <p><strong>Website:</strong> <a href="http://www.skenterprises.work" target="_blank">www.skenterprises.work</a></p>
+    <p><strong>Address:</strong> Shop no 3, Sai Anand Plaza, Agra Road, Castle Mill, Thane (W) 400601, Maharashtra</p>
+  </section>
+
+  <footer>
+    <p>© 2025 SK Enterprises. All rights reserved.</p>
+  </footer>
+
+ <!-- WhatsApp Chatbot -->
+<div class="chatbot">
+  <div class="chatbot-header" onclick="toggleChat()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    <span>Chat with us</span>
+  </div>
+
+  <div class="chatbot-body" id="chatWindow">
+    <div class="chatbot-topbar">
+      <strong>Ask a Question</strong>
+      <span class="chatbot-close" onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="chatbot-messages" id="chatMessages"></div>
+
+    <div class="chatbot-suggestions">
+      <span onclick="suggest('What services do you offer?')">What services?</span>
+      <span onclick="suggest('Where are you located?')">Location?</span>
+      <span onclick="suggest('Do you provide after sales support?')">After-sales?</span>
+      <span onclick="suggest('How to contact?')">Contact info?</span>
+    </div>
+
+    <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleKey(event)" />
+  </div>
+</div>
+
+<!-- Link JS -->
+<script src="js/chatbot.js"></script>
+
+ 
+ <script src="script.js"></script>
+</body>
+</html>
